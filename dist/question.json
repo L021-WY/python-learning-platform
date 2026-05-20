@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Python中用来输出内容的函数是？",
+        "A": "input()",
+        "B": "print()",
+        "C": "def()",
+        "D": "if()",
+        "answer": "B"
+    },
+    {
+        "id": 2,
+        "title": "以下哪个不属于Python基本数据类型？",
+        "A": "int",
+        "B": "str",
+        "C": "float",
+        "D": "web",
+        "answer": "D"
+    },
+    {
+        "id": 3,
+        "title": "定义Python函数使用哪个关键字？",
+        "A": "class",
+        "B": "def",
+        "C": "func",
+        "D": "void",
+        "answer": "B"
+    },
+    {
+        "id": 4,
+        "title": "C语言中主函数名称是？",
+        "A": "main",
+        "B": "start",
+        "C": "run",
+        "D": "begin",
+        "answer": "A"
+    },
+    {
+        "id": 5,
+        "title": "HTML中用来定义标题的标签是？",
+        "A": "<p>",
+        "B": "<h1>",
+        "C": "<div>",
+        "D": "<span>",
+        "answer": "B"
+    },
+    {
+        "id": 6,
+        "title": "CSS用来设置文字颜色的属性是？",
+        "A": "font-size",
+        "B": "color",
+        "C": "text",
+        "D": "bgcolor",
+        "answer": "B"
+    },
+    {
+        "id": 7,
+        "title": "JavaScript中声明变量正确写法是？",
+        "A": "var a=1",
+        "B": "dim a=1",
+        "C": "num a=1",
+        "D": "data a=1",
+        "answer": "A"
+    },
+    {
+        "id": 8,
+        "title": "循环语句while的作用是？",
+        "A": "条件判断",
+        "B": "循环重复执行代码",
+        "C": "定义变量",
+        "D": "导入模块",
+        "answer": "B"
+    },
+    {
+        "id": 9,
+        "title": "Python中注释单行代码用什么符号？",
+        "A": "//",
+        "B": "#",
+        "C": "/*",
+        "D": "--",
+        "answer": "B"
+    },
+    {
+        "id": 10,
+        "title": "运算符%的作用是？",
+        "A": "除法",
+        "B": "取余数",
+        "C": "乘法",
+        "D": "加法",
+        "answer": "B"
+    }
+]
