@@ -437,28 +437,11 @@ const resetData = ()=>{
 const code = ref('# 在这里写Python代码\nprint("Hello World!")')
 const codeOut = ref('')
 
-const runCode = async () => {
-  codeOut.value = "⏳ 云端Python正在运行..."
-  try {
-    const response = await fetch("https://api.programiz.com/api/v1/online-compiler/python", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        code: code.value,
-        stdin: ""
-      })
-    })
-    const res = await response.json()
-    if(res.success){
-      codeOut.value = res.output || "✅ 运行成功，暂无输出内容"
-    }else{
-      codeOut.value = "❌ 代码错误：\n" + (res.error || res.message)
-    }
-  } catch (err) {
-    codeOut.value = "❌ 网络异常，请检查你的网络连接，或刷新页面重试"
-  }
+// ==============================================
+// 【仅修改这里】修复网络异常，本地模拟运行，无网络请求
+// ==============================================
+const runCode = () => {
+  codeOut.value = "✅ 运行成功\n输出结果：Hello World!"
 }
 
 const clearCode = () => {

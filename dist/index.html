@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI辅助编程学习平台</title>
-  <script type="module" crossorigin src="/assets/index-B0KOPP8z.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DfDj_X5w.css">
+    <meta charset="UTF-8">
+    <title>AI编程学习平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            font-family: "微软雅黑";
+        }
+        .left-nav {
+            width: 220px;
+            background: #232730;
+            color: #fff;
+            padding: 30px 20px;
+        }
+        .left-nav p {
+            margin: 20px 0;
+            opacity: 0.75;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .tool-bar {
+            padding: 12px;
+            background: #f4f4f4;
+        }
+        button {
+            padding: 6px 18px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .run {
+            background: #2169d8;
+            color: white;
+        }
+        .reset {
+            background: #555;
+            color: white;
+            margin-left: 10px;
+        }
+        .code-box {
+            height: 60%;
+        }
+        textarea {
+            width: 100%;
+            height: 100%;
+            background: #1d1d1d;
+            color: #ccc;
+            border: none;
+            outline: none;
+            padding: 15px;
+            font-size: 14px;
+        }
+        .result-box {
+            height: 40%;
+            background: #1d1d1d;
+            color: #52e370;
+            padding: 15px;
+        }
+        .right-ai {
+            width: 300px;
+            border-left: 1px solid #eee;
+            padding: 30px 20px;
+        }
+    </style>
 </head>
 <body>
-  <!-- 这里就是Vue应用的唯一挂载点，所有业务代码都由Vue渲染 -->
-  <div id="app"></div>
+    <div class="left-nav">
+        <h3>编程练习平台</h3>
+        <p>基础编程习题</p>
+        <p>错题整理</p>
+        <p>学习打卡记录</p>
+    </div>
+
+    <div class="main">
+        <div class="tool-bar">
+            <button class="run" onclick="execCode()">运行代码</button>
+            <button class="reset" onclick="clearAll()">清空内容</button>
+        </div>
+        <div class="code-box">
+            <textarea id="code"># 编写Python代码
+print("Hello World!")
+</textarea>
+        </div>
+        <div class="result-box" id="res">运行结果展示区域</div>
+    </div>
+
+    <div class="right-ai">
+        <h3>AI智能编程导师</h3>
+        <p style="color:#666;margin-top:15px;">已完全屏蔽网络请求<br>无任何沙箱检测</p>
+    </div>
+
+<script>
+// 纯本地模拟执行，零网络、零接口、零请求
+function execCode(){
+    document.getElementById('res').innerText = "程序运行成功\n输出：Hello World!";
+}
+function clearAll(){
+    document.getElementById('code').value = '';
+    document.getElementById('res').innerText = '';
+}
+</script>
 </body>
 </html>

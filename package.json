@@ -7,7 +7,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "element-plus": "^2.4.0",
+    "express": "^5.2.1",
     "monaco-editor": "^0.45.0",
     "vue": "^3.5.34"
   },
